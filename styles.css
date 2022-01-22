@@ -1,6 +1,6 @@
 body {
     font-family: 'Fjalla One', sans-serif;
-    color: hsl(0, 0%, 2%);
+    color:black;
     background-image: url(images/GrizzHockeyBGfixed.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,7 +37,6 @@ h2 {
     font-size: 20px;
     margin-left: 250px;
     margin-right: 250px;
-    margin-bottom: 100px;
   }
   
   .animated {
@@ -77,13 +76,12 @@ h2 {
       align-items: center;
   }
 
-*{
+  * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 nav {
-    color:hsl(0, 0%, 2%);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -92,29 +90,30 @@ nav {
 }
 
 .logo{
-    color:hsl(0, 0%, 2%);
+    color:black;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
 }
 
 .nav-links{
-    color: hsl(0, 0%, 2%);
+    color:black;
     display: flex;
     justify-content: space-around;
     width: 30%;
     list-style: none;
+
 }
 
 .nav-links li{
-    color: hsl(0, 0%, 2%);
+    color: black;
     list-style-type: none;
     padding: 5;
     justify-content: space-around;
     
 }
 .nav-links a{
-    color:hsl(0, 0%, 4%);
+    color:black;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -129,7 +128,7 @@ nav {
 .burger div{
     width: 25px;
     height: 3px;
-    background-color:hsl(0, 0%, 2%);
+    background-color:black;
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -154,25 +153,36 @@ nav {
     }
     
     .nav-links li{
-        opacity: 0;
+        opacity: 1;
+    }
+    .nav-links a{
+        color:black;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 14px;
     }
 
     .burger{
         display: block;
+        cursor: pointer;
         
     }
     @media screen and (max-width:1024px){
         .nav-links{
+            display: flex;
+            justify-content: space-around;
             width: 60%;
+            list-style-type: none;
         }
 
 .nav-active{
     transform: translateX(0%);
 }
-@keyframes navLinkFade {
+@keyframes navLinkFade{
     from{
         opacity: 0;
-        trnasform: translateX(50px);
+        transform: translateX(50px);
     }
         to{
             opacity: 1;
