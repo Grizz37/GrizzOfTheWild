@@ -1,4 +1,12 @@
-body {
+html { font-size: 16px; }
+
+@media (max-width: 550px) {
+  p { font-size: 1em; }
+}
+
+@media (min-width: 551px) {
+  p { font-size: 1.25rem; }
+}body {
     font-family: 'Fjalla One', sans-serif;
     color:black;
     background-image: url(images/GrizzHockeyBGfixed.png);
